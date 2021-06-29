@@ -1,6 +1,7 @@
 body {
     padding: 5rem;
     margin: auto;
+    background-color: #f7f6fa;
 }
 
 h1, h2 {
@@ -14,18 +15,24 @@ h2 {
 
 .addBtn {
     font-size: 48px;
+    color: black;
     padding: 0px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 10px rgb(189, 189, 189);
+}
+
+.addBtn:hover {
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 0 10px rgb(112, 112, 112);
+
 }
 
 .mainForm {
     background-color: white;
     padding: 50px;
-    /* display: flex; */
-    /* justify-items: center; */
-    /* flex-direction: column; */
     width: 75%;
     border-radius: 5px;
-    /* display: none; */
 }
 
 .modal-content {
@@ -34,6 +41,16 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#inputEmail3:focus {
+    border-color: #8931fe;
+    box-shadow: 0 0 6px #8931fe;
+}
+
+#inputPassword3:focus {
+    border-color: #8931fe;
+    box-shadow: 0 0 6px #8931fe;
 }
 
 .inputs {
@@ -59,4 +76,10 @@ h2 {
     justify-content: center;
     align-self: center;
     width: 94%;
+    background-color: #8931fe;
+    border-color: #8931fe;
+}
+
+.contBtn:hover {
+    background-color: #6f29ca !important;
 }

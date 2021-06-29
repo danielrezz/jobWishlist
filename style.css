@@ -1,0 +1,62 @@
+body {
+    padding: 5rem;
+    margin: auto;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: grey;
+}
+
+.addBtn {
+    font-size: 48px;
+    padding: 0px;
+}
+
+.mainForm {
+    background-color: white;
+    padding: 50px;
+    /* display: flex; */
+    /* justify-items: center; */
+    /* flex-direction: column; */
+    width: 75%;
+    border-radius: 5px;
+    /* display: none; */
+}
+
+.modal-content {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addJob {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.userInput {
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    width: 100%;
+}
+
+.contBtn {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 94%;
+}

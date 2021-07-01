@@ -15,20 +15,24 @@
 
     <h1>Job Wishlist</h1>
 
-    <h2>4 jobs</h2>
+    <h2><span id="job-count">4</span>&nbsp;jobs</h2>
 
     <div class="d-grid gap-2 col-4 mx-auto">
         <button class="btn btn-secondary addBtn" type="button" data-bs-toggle="modal"
             data-bs-target="#exampleModal">&#43;</button>
     </div>
 
-    <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Pathrise</h5>
-          <p class="card-text">Software Engineer</p>
-          <p class="card-text"><small class="text-muted">added 13 mins ago</small></p>
-        </div>
-      </div>
+    <div id="job-list">
+        <div class="card" id="job-card">
+            <div class="card-body">
+              <h5 class="card-title">Pathrise</h5>
+              <p class="card-text">Software Engineer</p>
+              <p class="card-text"><small class="text-muted">added 13 mins ago</small></p>
+            </div>
+          </div>
+    </div>
+
+   
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -39,12 +43,12 @@
                     <form class="inputs">
                         <div class="row mb-3 userInput">
                             <div>
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Company Name">
+                                <input type="text" class="form-control companyNameInput" id="inputEmail3" placeholder="Company Name">
                             </div>
                         </div>
                         <div class="row mb-3 userInput">
                             <div>
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Job Title">
+                                <input type="text" class="form-control jobTitleInput" id="inputPassword3" placeholder="Job Title">
                             </div>
                         </div>
 

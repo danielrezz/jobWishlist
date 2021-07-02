@@ -1,0 +1,131 @@
+body {
+    padding: 5rem;
+    margin: auto;
+    background-color: #f7f6fa;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: grey;
+}
+
+.addBtn {
+    margin-top: 40px;
+    font-size: 48px;
+    color: black;
+    padding: 0px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 10px rgb(189, 189, 189);
+}
+
+.addBtn:hover {
+    background-color: rgb(209, 209, 209);
+    box-shadow: 0 0 10px rgb(112, 112, 112);
+
+}
+
+.mainForm {
+    background-color: white;
+    padding: 50px;
+    width: 75%;
+    border-radius: 5px;
+}
+
+.modal-content {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputEmail3:focus {
+    border-color: #8931fe;
+    box-shadow: 0 0 6px #8931fe;
+}
+
+#inputPassword3:focus {
+    border-color: #8931fe;
+    box-shadow: 0 0 6px #8931fe;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addJob {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.userInput {
+    display: flex;
+    justify-items: center;
+    align-self: center;
+    width: 100%;
+}
+
+.contBtn {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 94%;
+    background-color: #8931fe;
+    border-color: #8931fe;
+}
+
+.contBtn:hover {
+    background-color: #6f29ca !important;
+}
+
+.card {
+    margin: auto;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #8fb1df;
+    box-shadow: 0 0 6px rgb(202, 202, 202);
+}
+
+.card-title {
+    color: white;
+}
+
+.card-text {
+    color: whitesmoke;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.card-text .text-muted {
+    float: right;
+    margin-top: 20px;
+}
+
+.deleteBtn {
+    background: none;
+    width: 5%;
+    float: right;
+    border: none;
+    cursor: pointer;
+    display: none;
+    color:rgb(112, 112, 112);
+    opacity: 0.5;
+}
+
+.card:hover .deleteBtn {
+    display: block;
+}
+
+.deleteBtn:hover {
+    opacity: 1;
+    color: white;
+}

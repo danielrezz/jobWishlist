@@ -46,13 +46,13 @@ function renderJobs() {
         if (i === 0 || i === 6) {
         mainDiv.style.setProperty("background-color", "#ffb3ba");
         } else if (i === 1 || i === 7) {
-            mainDiv.style.setProperty("background-color", "#ffdfba");
+            mainDiv.style.setProperty("background-color", "#bae1ff");
         } else if (i === 2 || i === 8) {
             mainDiv.style.setProperty("background-color", "#ffffba");
         } else if (i === 3 || i === 9) {
             mainDiv.style.setProperty("background-color", "#baffc9");
         } else if (i === 4 || i === 10) {
-            mainDiv.style.setProperty("background-color", "#bae1ff");
+            mainDiv.style.setProperty("background-color", "#ffdfba");
         } else if (i === 5 || i === 11) {
             mainDiv.style.setProperty("background-color", "#c5b3e3");
         }

@@ -91,16 +91,16 @@ h2 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    background-color: #8fb1df;
+    /* background-color: #8fb1df; */
     box-shadow: 0 0 6px rgb(202, 202, 202);
 }
 
 .card-title {
-    color: white;
+    color: black;
 }
 
 .card-text {
-    color: whitesmoke;
+    color: rgb(77, 77, 77);
     font-size: 1rem;
     margin-top: 10px;
 }
@@ -127,5 +127,5 @@ h2 {
 
 .deleteBtn:hover {
     opacity: 1;
-    color: white;
+    color: rgb(255, 96, 96);
 }

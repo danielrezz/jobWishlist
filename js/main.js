@@ -9,10 +9,24 @@ let jobs = [];
 
 init();
 
+function getRandomColor() {
+    let colors = ["#ffb3ba", "#ffdfba", "#ffffba", "#baffc9", "#bae1ff"];
+    let newColor = "";
+    for (let i = 0; i < 1; i++) {
+      newColor = colors[Math.floor(Math.random() * 5)];
+    }
+    getRandomColor.fired = true;
+    return newColor;
+  }
+
 function renderJobs() {
 
     jobList.innerHTML = "";
-    jobCount.textContent = jobs.length;
+    if(jobs.length === 1) {
+        jobCount.textContent = `${jobs.length} job`;
+    } else {
+        jobCount.textContent = `${jobs.length} jobs`;
+    }
 
     for (var i = 0; i < jobs.length; i++) {
         let job = jobs[i];
@@ -28,6 +42,20 @@ function renderJobs() {
 
         mainDiv.className = "card";
         mainDiv.setAttribute("data-index", i);
+        
+        if (i === 0 || i === 6) {
+        mainDiv.style.setProperty("background-color", "#ffb3ba");
+        } else if (i === 1 || i === 7) {
+            mainDiv.style.setProperty("background-color", "#ffdfba");
+        } else if (i === 2 || i === 8) {
+            mainDiv.style.setProperty("background-color", "#ffffba");
+        } else if (i === 3 || i === 9) {
+            mainDiv.style.setProperty("background-color", "#baffc9");
+        } else if (i === 4 || i === 10) {
+            mainDiv.style.setProperty("background-color", "#bae1ff");
+        } else if (i === 5 || i === 11) {
+            mainDiv.style.setProperty("background-color", "#c5b3e3");
+        }
 
         secondDiv.className = "card-body";
         company.className = "card-title";
@@ -45,7 +73,17 @@ function renderJobs() {
         company.appendChild(position);
         position.appendChild(time);
     }
+
 }
+
+// function styleJobs() {
+//     let mainDiv = document.querySelector(".card");
+//     let time = document.querySelector(".card-text");
+
+//     mainDiv.style.setProperty("background-color", getRandomColor());
+//     time.innerHTML = `<small class="text-muted">${moment().startOf('hour').fromNow()}</small>`;
+//     return;
+// }
 
 function init() {
 
@@ -56,6 +94,7 @@ function init() {
     }
 
     renderJobs();
+
 }
 
 function storeJobs() {
@@ -80,6 +119,7 @@ contBtn.addEventListener("click", function (event) {
 
     storeJobs();
     renderJobs();
+
 });
 
 jobList.addEventListener("click", function (event) {
